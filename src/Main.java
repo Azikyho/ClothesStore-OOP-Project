@@ -11,7 +11,7 @@ public class Main {
         ClothingItem item2 = new ClothingItem(102, "Jeans", "M", 22000.0, "Levis", 5);
         ClothingItem item3 = new ClothingItem(); // Default constructor
 
-        Customer customer1 = new Customer(5001, "Azamat Tanat", "+77011234567", "L", 80);
+        Customer customer1 = new Customer(5001, "Azamat A.", "+77011234567", "L", 80);
         Customer customer2 = new Customer(5002, "Aruzhan S.", "+77019876543", "M", 150);
 
         Order order1 = new Order(1001, customer1.getName(), 0.0, "Pending", 0);
