@@ -3,8 +3,8 @@ package WEEK2.IT2503;
 public class ClothingItem {
     private int itemId;
     private String name;
-    private String size;   // S, M, L, XL...
-    private double price;  // KZT
+    private String size;   
+    private double price; 
     private String brand;
     private int stockQuantity;
 
@@ -26,7 +26,7 @@ public class ClothingItem {
         this.stockQuantity = 0;
     }
 
-    // Getters
+
     public int getItemId() { return itemId; }
     public String getName() { return name; }
     public String getSize() { return size; }
@@ -34,7 +34,6 @@ public class ClothingItem {
     public String getBrand() { return brand; }
     public int getStockQuantity() { return stockQuantity; }
 
-    // Setters
     public void setItemId(int itemId) { this.itemId = itemId; }
     public void setName(String name) { this.name = name; }
     public void setSize(String size) { this.size = size; }
@@ -42,7 +41,6 @@ public class ClothingItem {
     public void setBrand(String brand) { this.brand = brand; }
     public void setStockQuantity(int stockQuantity) { this.stockQuantity = stockQuantity; }
 
-    // Additional methods (logic)
     public void applyDiscount(double percentage) {
         if (percentage <= 0 || percentage >= 100) return;
         this.price = this.price * (1 - percentage / 100.0);
