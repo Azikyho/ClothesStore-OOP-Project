@@ -23,21 +23,18 @@ public class Customer {
         this.points = 0;
     }
 
-    // Getters
     public int getCustomerId() { return customerId; }
     public String getName() { return name; }
     public String getPhoneNumber() { return phoneNumber; }
     public String getPreferredSize() { return preferredSize; }
     public int getPoints() { return points; }
 
-    // Setters
     public void setCustomerId(int customerId) { this.customerId = customerId; }
     public void setName(String name) { this.name = name; }
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
     public void setPreferredSize(String preferredSize) { this.preferredSize = preferredSize; }
     public void setPoints(int points) { this.points = points; }
 
-    // Additional methods (logic)
     public void addPoints(int points) {
         if (points > 0) this.points += points;
     }
